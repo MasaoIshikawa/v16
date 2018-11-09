@@ -1,0 +1,54 @@
+@import 'src/assets/styles/variable.scss';
+
+.container {
+  padding: 60px;
+}
+
+.title {
+  margin-bottom: $lendingusa_spacing_md + 2;
+}
+
+:global {
+  .notifications-tc {
+    z-index: 10000 !important;
+  }
+}
+
+.loginContainer {
+  margin-top: 100px;
+  width: 100%;
+  height: calc(100vh - 400px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media screen and (max-width: 640px) {
+    height: calc(100% - 50px);
+  }
+}
+
+.innerLogin {
+  margin-top: -90px;
+
+  @media screen and (max-width: 640px) {
+    padding: 0 20px;
+  }
+}
+
+.relativeWrapper {
+  position: relative;
+  margin-top: 40px;
+}
+
+.error {
+  position: absolute;
+  top: 0;
+  transform: translate(-50%, -100%);
+  left: 50%;
+  color: #d71f28;
+}
+
+.forgotPassword {
+  display: flex;
+  justify-content: center;
+}

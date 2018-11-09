@@ -1,0 +1,22 @@
+body {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.buttonLink {
+  padding: 13px 35px 14px 15px;
+  border-bottom: 1px solid #f2f1f0;
+  color: $main_black;
+
+  &:hover,
+  &:focus {
+    background-color: #fff;
+    color: #d82027;
+  }
+}
+
+:global {
+  .sticky-inner-wrapper {
+    // width: 100% !important;
+  }
+}

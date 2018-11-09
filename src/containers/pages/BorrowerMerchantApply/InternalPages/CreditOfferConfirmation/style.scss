@@ -1,0 +1,358 @@
+.button {
+  // margin-top: $lendingusa_spacing_md + 2;
+  padding: 20px 30px !important;
+}
+
+.modal {
+  border-radius: 0;
+  max-width: 670px;
+}
+
+.buttonWidth {
+  width: 100%;
+}
+
+.size-xs {
+  font-size: $lendingusa_font_xs;
+}
+
+:global {
+  .rangeslider-horizontal {
+    height: 4px;
+    border-radius: 0;
+
+    .rangeslider__handle {
+      border: 2px solid #039958;
+      border-radius: 50%;
+      background-color: #04bc6c;
+      box-shadow: 0 4px 15px 1px rgba(0,0,0,.2);
+      width: 44px;
+      height: 44px;
+
+      &::after {
+        display: none;
+      }
+
+      .rangeslider__handle-tooltip {
+        width: 60px;
+        height: 35px;
+      }
+    }
+  }
+
+  .rangeslider__fill {
+    background-color: $light_gray !important;
+  }
+
+  .loan-card .button.green {
+    color: #fff !important;
+  }
+}
+
+.encryption {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.noBottomMargin {
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+
+.securityLock {
+  width: 40px;
+}
+
+.loan-card {
+  margin-bottom: 30px;
+  text-decoration: none !important;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &.selected .highlight {
+    background-color: #D8FFEE;
+  }
+
+  em {
+    color: #04BC6C;
+    font-style: normal;
+  }
+
+  p {
+    margin-bottom: 0;
+    color: #7A7492;
+  }
+
+  h2 {
+    color: #04BC6C;
+    margin-bottom: 15px;
+
+    &::before {
+      display: none;
+    }
+
+    @media screen and (max-width: 39.9375em) {
+      position: absolute;
+      right: 30px;
+      top: 31px;
+      font-size: 36px;
+    }
+  }
+}
+
+.active {
+  &::before {
+    box-shadow: inset 0 0 0 0 #04BC6C;
+    border-radius: 6px;
+    bottom: 0;
+    content: " ";
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: box-shadow 0.2s linear;
+    z-index: 1;
+  }
+
+  &:hover::before,
+  &.selected::before {
+    box-shadow: inset 0 0 0 2px #04BC6C; /* Replace with variable */
+  }
+}
+
+.selectedButton {
+  color: #FFF !important;
+  margin-bottom: 5px;
+  margin-top: 10px;
+
+  @media screen and (min-width: 40em) {
+    bottom: 30px;
+    left: 30px;
+    position: absolute;
+    right: 30px;
+    width: calc(100% - 60px);
+  }
+
+  @media screen and (max-width: 74.9375em) and (min-width: 40em)  {
+    bottom: 111px;
+  }
+}
+
+.selectedHighlight {
+  background-color: #D8FFEE;
+}
+
+.highlight {
+  background-color: #F5F6F7;
+  transition: background-color 0.2s linear;
+  position: relative;
+  
+  @media screen and (max-width: 39.9375em){
+    padding-bottom: 167px !important;
+  }
+}
+
+.cell {
+  padding: 25px 30px;
+}
+
+.small {
+  color: #7A7492;
+}
+
+.selectButton {
+  color: #002248 !important;
+  margin-bottom: 5px;
+  margin-top: 25px;
+}
+
+.promoMessage {
+  margin-top: 10px;
+
+  em {
+    font-weight: 600;
+  }
+}
+
+.card-header {
+  border-bottom: 2px solid #F2F1F0;
+  left: 0;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  width: 100%;
+
+  h5 {
+    line-height: 60px;
+    margin-bottom: 0;
+  }
+}
+
+.formGroup {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.description {
+  font-size: 0.8em;
+  line-height: 1.6;
+  text-align: justify;
+  margin-bottom: 15px !important;
+}
+
+.marginTop10 {
+  margin-top: 10px;
+}
+
+.button {
+  padding: 12px 0 14px;
+}
+
+.promoMessage {
+  top: auto;
+  background-color: #04BC6C;
+  border-radius: 8px;
+  font-size: 14px;
+  left: calc(33.3333% + 30px);
+  line-height: 1.2;
+  position: absolute;
+  right: 30px;
+  text-align: center;
+  text-transform: uppercase;
+
+  .title {
+    background: #002248 url(/assets/icons/star.svg) calc(100% + 11px) 47% no-repeat;
+    padding: 12px 14px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    border-radius: 8px 0 0 0;
+    justify-content: center;
+
+    em {
+      color: #ffffff;
+      font-weight: 600;
+      font-style: normal;
+      line-height: 1.2;
+    }
+    
+    &::before {
+      content: " ";
+      display: block;
+      width: 0;
+      height: 0;
+      border-top: 28px solid transparent;
+      border-bottom: 28px solid transparent;
+      border-right: 15px solid #002248;
+      position: absolute;
+      top: 0;
+      left: -15px;
+      z-index: 1;
+
+      @media screen and (max-width: 74.9375em) {
+        display: none;
+      }
+    }
+
+    @media screen and (min-width: 40em) {
+      border-radius: 8px 0 0 8px;
+    }
+
+    @media screen and (min-width: 74.9375em) {
+      border-radius: 0;
+    }
+  }
+
+  .offer {
+    align-items: center;
+    background: #04BC6C url(/assets/icons/star.svg) -10px 47% no-repeat;
+    border-radius: 0 8px 0 0;
+    display: flex;
+    font-weight: 600;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    z-index: 1;
+
+    @media screen and (min-width: 40em) {
+      border-radius: 0;
+    }
+    p {
+      color: #ffffff;
+      line-height: 1.2;
+      margin-bottom: 0;
+      margin-top: 0;
+      min-width: 42.55px;
+    }
+
+    em {
+      font-size: 24px;
+      padding-left: 10px;
+      color: #ffffff;
+      font-weight: 600;
+      font-style: normal;
+      line-height: 1.2;
+    }
+  }
+
+  .detailDescription {
+    padding: 12px 14px;
+    background-color: #E6E7E8;
+    border-radius: 0 0 6px 6px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    justify-content: center;
+
+    p {
+      color: #797a93;
+      line-height: 1.2;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+
+    @media screen and (min-width: 40em) {
+        background-color: #F5F6F7;
+        border-radius: 0 6px 6px 0;
+    }
+  }
+
+  @media screen and (max-width: 74.9375em) {
+    left: 30px;
+  }
+
+  @media screen and (max-width: 639px) {
+    top: 100px;
+  }
+
+  @media screen and (min-width: 640px) {
+    bottom: 30px;
+  }
+}
+
+.detail {
+  @media screen and (min-width: 40em) {
+    padding-bottom: 100px !important;
+  }
+
+  em {
+    color: #04bc6c;
+    font-style: normal;
+  }
+
+  small {
+    margin-top: -10px;
+    margin-bottom: 12px;
+    color: #7A7492;
+  }
+
+  h5 {
+    margin-bottom: 10px;
+  }
+}

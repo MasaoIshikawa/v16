@@ -1,0 +1,21 @@
+.error {
+  height: 10px;
+  position: relative;
+  left: 0;
+  top: 0;
+  padding-left: 18px;
+  font-size: 12px;
+  word-wrap: break-word;
+  margin: ($lendingusa_spacing_xs - 7) 0 $lendingusa_spacing_xs - 2;
+  line-height: 1em;
+  color: $lendingusa_gray3;
+}
+
+.input {
+  margin: 0;
+  background-color: #fff !important;
+}
+
+.layerOrder {
+  z-index: 1;
+}

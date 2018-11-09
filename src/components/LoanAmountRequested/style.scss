@@ -1,0 +1,35 @@
+.label {
+  margin-top: $lendingusa_spacing_xs - 2;
+}
+
+.input {
+  font-size: 2rem;
+  color: $main_black;
+}
+
+:global {
+  .rangeslider__label-item {
+    transform: translateX(-35px) !important;
+    margin-top: 10px;
+
+    &::before {
+      background-color: #BCBCC9;
+      content: " ";
+      display: block;
+      height: 10px;
+      left: 15px;
+      position: absolute;
+      top: -13px;
+      width: 1px;
+    }
+  }
+
+  .rangeslider__handle {
+    z-index: 1;
+  }
+
+  .rangeslider {
+    background-color: #cacaca;
+    box-shadow: initial;
+  }
+}

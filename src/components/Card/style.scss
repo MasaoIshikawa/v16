@@ -1,0 +1,11 @@
+.color {
+  color: $main_black;
+}
+
+.card {
+  overflow: visible;
+
+  &::before {
+    background-color: $main_black !important;
+  }
+}

@@ -1,0 +1,521 @@
+/* Global Styles */
+.float-right {
+  float: right;
+}
+
+.button.secondary {
+  color: #002248 !important;
+}
+
+.button.toggle-btn.selected {
+  box-shadow: inset 0 0 0 2px #04BC6C;
+}
+.button.toggle-btn:focus {
+  background-color: #fff;
+}
+
+thead {
+  margin-top: -1px;
+}
+thead th {
+  color: #797A93;
+  font-size: 14px;
+  font-weight: 400;
+  padding-bottom: 7px;
+  padding-top: 7px;
+}
+tbody tr:nth-child(even) {
+  background-color: #F9F9F9;
+}
+table.hover tbody tr:hover {
+  background-color: #FCFCFC;
+}
+table.hover:not(.unstriped) tr:nth-of-type(even):hover {
+  background-color: #F2F1F0;
+}
+tbody td {
+  color: #797A93;
+  cursor: initial;
+  padding-bottom: .45rem;
+  padding-top: .45rem;
+}
+tbody td a {
+  color: #797A93 !important;
+}
+
+/*  Styles */
+.portal {
+  background-color: #F2F1F0;
+  min-height: calc(100vh - 90px);
+}
+.portal.grid-container > .grid-x {
+  max-width: none;
+}
+.card-grid-container {
+  padding: 30px;
+}
+.card-grid-container .card {
+  margin-bottom: 30px;
+}
+
+.portal-footer {
+  background-color: #fff;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.portal-footer .footer-content {
+  margin: 15px !important;
+}
+
+.portal .page-header h3 {
+  margin-bottom: 30px;
+}
+.portal .page-header h3:before {
+  display: none;
+}
+
+.portal .card-header {
+  border-bottom: 1px solid #F2F1F0;
+  padding: 0 30px;
+  position: relative;
+}
+.portal .card-header h5 {
+  font-size: 16px;
+  line-height: 50px;
+  margin-bottom: 0;
+}
+.portal .card-header button {
+  box-shadow: none;
+  border-radius: 4px;
+  font-size: 14px;
+  height: 32px;
+  line-height: 30px;
+  padding: 0 20px;
+  position: absolute;
+  top: 9px;
+  right: 9px;
+}
+.portal .card-section {
+  padding: 30px 30px 5px;
+}
+.portal .card-section > p {
+  margin: -10px 0 25px;
+}
+
+.portal .badge {
+  background-color: #797A93;
+  box-shadow: none;
+  font-weight: 500;
+  letter-spacing: normal;
+  padding: 3px 6px;
+  text-transform: capitalize;
+}
+.portal tbody .badge {
+  width: 100%;
+}
+
+.portal .pagination {
+  margin: 0;
+  padding: 0;
+}
+
+/* Portal Header Nav */
+.portal-bar .menu > .menu-item > a {
+  font-size: 18px;
+}
+.portal-bar .top-bar-right .menu > .menu-item > a,
+.portal-bar .top-bar-right .menu > .menu-item > button {
+  align-items: flex-end;
+  background: url(assets/icons/arrow-down.svg) 85% 50% no-repeat;
+  border-right: 1px solid #E6E9ED;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.4;
+  padding: 13px 65px 14px 20px !important;
+}
+.portal-bar .top-bar-right .menu > .menu-item > a:after,
+.portal-bar .top-bar-right .menu > .menu-item > button:after {
+  display: none;
+}
+.portal-bar .menu > .menu-item > .dropdown a,
+.portal-bar .menu > .menu-item > .dropdown button {
+  font-size: 16px;
+}
+.portal-bar .top-bar-right {
+  flex: 0;
+}
+.portal-bar .top-bar-right .menu {
+  padding: 0 30px;
+}
+.portal-bar .top-bar-right .menu-item span {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+}
+.portal-bar.top-bar .phone {
+  margin-right: 0;
+}
+.portal-bar .top-bar-center {
+  display: flex;
+  width: auto;
+  overflow: hidden;
+}
+.portal-bar .top-bar-center .menu {
+  flex-wrap: nowrap;
+}
+.portal-bar .newsroom {
+  display: flex;
+  flex-direction: column;
+  height: 90px;
+  justify-content: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.portal-bar .newsroom span {
+  color: #002248;
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+}
+.portal-bar .newsroom a {
+  display: inline-block;
+  width: 100%;
+}
+
+/* Dashboard Page */
+#StartBar {
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.04), 0 0 0 0 rgba(0,0,0,0.10);
+  background-color: #fff;
+  height: calc(100vh - 90px);
+  overflow-y: scroll;
+  padding: 15px;
+  position: static;
+}
+#StartHere {
+  background-image: radial-gradient(38% 60%, #194B82 0%, #002248 130%);
+  box-shadow: none;
+  margin-bottom: 30px;
+  padding: 30px;
+}
+#StartHere h2 {
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 5px;
+}
+#StartHere p {
+  color: #fff;
+  margin-bottom: 25px;
+  opacity: 0.75;
+}
+#StartActions a {
+  background: url(assets/icons/arrow-right-gray.svg) 95% 50% no-repeat;
+  border-top: 1px solid #E6E9ED;
+  display: block;
+  margin: 0 -15px;
+  padding: 15px 45px 15px 20px;
+}
+#StartActions a:last-of-type {
+  border-bottom: 1px solid #E6E9ED;
+}
+#StartActions a img {
+  float: left;
+  margin-right: 15px;
+  margin-top: 14px;
+}
+#StartActions a:not(:nth-child(1)) img {
+  margin-top: 8px;
+}
+#StartActions a h5 {
+  margin-bottom: 3px;
+  transition: color 0.2s linear;
+}
+#StartActions a p {
+  color: #7A7492;
+  line-height: 1.3;
+  margin-bottom: 5px;
+}
+#StartActions .badge {
+  margin-right: 10px;
+  position: relative;
+  top: -2px;
+}
+
+.card-grid > .cell {
+  border-top: 1px solid #E6E9ED;
+  border-right: 1px solid #E6E9ED;
+  padding: 30px 10px;
+  text-align: center;
+}
+.card-grid .cell:nth-child(1),
+.card-grid .cell:nth-child(2) {
+  border-top: 0;
+}
+.card-grid .cell:nth-child(2),
+.card-grid .cell:nth-child(4) {
+  border-right: 0;
+}
+.card-grid h6 {
+  font-weight: normal;
+  display: block;
+  margin-bottom: 3px;
+}
+.card-grid h2 {
+  font-size: 64px;
+  font-weight: normal;
+  margin: 15px;
+}
+.card-grid .button {
+  margin-bottom: 0;
+}
+
+#ActionCenter .card-grid > .cell {
+  padding: 52px 10px;
+}
+
+#LoanStats .card-grid .cell:nth-child(3) {
+  border-right: 0;
+}
+#LoanStats h2 {
+  margin-bottom: 0;
+}
+
+.card-list {
+  list-style: none;
+  margin: 0;
+}
+.card-list li:not(:first-of-type) {
+  border-top: 1px solid #E6E9ED;
+}
+.card-list li a {
+  background: url(assets/icons/arrow-right-gray.svg) 96% 50% no-repeat;
+  color: #002248;
+  display: block;
+  font-size: 18px;
+  padding: 16px 15px;
+  transition: color 0.2s linear;
+}
+.card-list li a:hover {
+  color: #D82028;
+}
+.card-list li a img {
+  margin-right: 8px;
+}
+
+.card-footer {
+  padding: 0 20px;
+}
+
+/* Applications Page */
+.search-input {
+  position: relative;
+}
+.search-input input {
+  background-image: url(assets/icons/search.svg);
+  background-position: 15px 50%;
+  background-repeat: no-repeat;
+  padding-left: 45px;
+  padding-right: 50px;
+}
+.search-input button {
+  border-radius: 4px;
+  box-shadow: none;
+  height: 32px;
+  line-height: 30px;
+  padding: 0;
+  position: absolute;
+  right: 6px;
+  top: 6px;
+  width: 32px;
+}
+.search-input button:after {
+  margin-left: 1px !important;
+}
+
+.portal .badge.approved {
+  background-color: #ffffff;
+  border: 1px solid #04BC6C;
+  color: #04BC6C;
+  padding-bottom: 2px;
+  padding-top: 2px;
+}
+.portal .badge.initiated {
+  background-color: #4A90E2;
+}
+.portal .badge.pre-approved {
+  background-color: #04BC6C;
+}
+.portal .badge.pending {
+  background-color: #F29F5A;
+}
+.portal .badge.expired,
+.portal .badge.cancelled {
+  background-color: #BCBCC9;
+}
+.portal .badge.needs-sig {
+  background-color: #8C6AF6;
+}
+
+ul.pagination li a,
+ul.pagination li.current,
+ul.pagination .pagination-previous {
+  border: 1px solid #ebe9e8;
+  border-radius: 6px;
+  font-size: 16px;
+  height: 40px;
+  line-height: 40px;
+  width: 40px;
+}
+ul.pagination li.current {
+  border: 2px solid #04BC6C;
+  box-shadow: 0 2px 8px 1px rgba(0,0,0,0.07);
+  color: #002248;
+  top: -13px;
+  position: relative;
+}
+ul.pagination li a:hover {
+  background-color: transparent;
+  border-color: #BCBCC9;
+}
+ul.pagination li.pagination-previous,
+ul.pagination li.pagination-next {
+  background: url(assets/icons/arrow-right-gray.svg) 50% no-repeat !important;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+ul.pagination li.pagination-previous {
+  transform: rotate(180deg);
+}
+.pagination-label {
+  color: #797A93;
+  font-size: 14px;
+  line-height: 40px;
+}
+
+/* Application Details Page */
+.loan-status {
+  background-color: #BCBCC9;
+  border-radius: 6px;
+  color: #fff;
+  display: inline-block;
+  font-weight: 500;
+  line-height: 44px;
+}
+.loan-status span {
+  padding: 0 20px;
+}
+.loan-status .badge {
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0 20px;
+}
+
+#LoanCancellation .medium-6 {
+  margin-bottom: 20px;
+}
+#LoanCancellation .button.large {
+  margin-top: 30px;
+}
+
+/* Web Banners */
+.page-web-banners .card-grid .cell {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.page-web-banners .card-grid .cell.action {
+  flex-direction: column;
+}
+.page-web-banners .card-grid h6 {
+  margin-bottom: 15px;
+}
+.page-web-banners .card-grid .button {
+  width: 120px;
+}
+.page-web-banners .card-grid > .cell:nth-child(2) {
+  border-right: 1px solid #E6E9ED;
+}
+.page-web-banners .card-grid > .cell:nth-child(3) {
+  border-top: 0;
+  border-right: 0;
+}
+.page-web-banners .banner-img {
+  background-color: #D8D8D8;
+  border: 1px solid #979797;
+  display: block;
+  position: relative;
+}
+.page-web-banners .banner-img.size-1 {
+  height: 100px;
+  width: 128px;
+}
+.page-web-banners .banner-img.size-2 {
+  height: 120px;
+  width: 40px;
+}
+.page-web-banners .banner-img.size-3 {
+  height: 20px;
+  width: 164px;
+}
+.page-web-banners .banner-img:before {
+  background-color: rgba(0, 33, 71, 0.5);
+  bottom: -1px;
+  content: " ";
+  display: block;
+  left: -1px;
+  opacity: 0;
+  position: absolute;
+  right: -1px;
+  top: -1px;
+  transition: opacity 0.2s linear;
+}
+.page-web-banners .banner-img:after {
+  background-image: url(assets/icons/circle-zoom.svg);
+  background-repeat: no-repeat;
+  content: " ";
+  display: block;
+  height: 80px;
+  left: 50%;
+  margin-left: -45px;
+  margin-top: -38px;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  width: 90px;
+  transition: opacity 0.2s linear;
+}
+.page-web-banners .banner-img:hover:before,
+.page-web-banners .banner-img:hover:after {
+  opacity: 1;
+}
+
+#EmbedCodeModal {
+  width: 860px;
+}
+#EmbedCodeModal textarea {
+  height: 180px;
+}
+
+/* Brochures Page */
+.page-brochures .image {
+  padding-top: 30px;
+}
+.page-brochures h6 {
+  margin-bottom: 30px;
+}
+.page-brochures .button {
+  margin-top: 10px;
+}
+
+#root {
+  min-height: 100vh;
+  position: relative;
+}
+
+.section {
+  padding-bottom: 30px !important;
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="02---Loan-Details" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-321.000000, -434.000000)">
+        <g id="Group-4" transform="translate(15.000000, 421.000000)">
+            <g id="Group" transform="translate(306.000000, 13.000000)">
+                <circle id="Oval-2" fill="#797A93" opacity="0.502151268" cx="12" cy="12" r="12"></circle>
+                <path d="M12,17 L12,12" id="Line-2" stroke="#F9F9F9" stroke-width="2" stroke-linecap="square"></path>
+                <rect id="Rectangle-2" fill="#F9F9F9" x="10.5" y="5.5" width="3" height="3" rx="1.5"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

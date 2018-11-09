@@ -1,0 +1,84 @@
+.pageHeader {
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.activeStatus {
+  line-height: 44px;
+}
+
+.button {
+  &:focus,
+  &:active {
+    background-color: #fff !important;
+  }
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+
+.status-2000 {
+  background-color: #4a86e8 !important;
+}
+
+.status-2001 {
+  background-color: #4a86e8 !important;
+}
+
+.status-2002 {
+  background-color: #4a86e8 !important;
+}
+
+.status-2003 {
+  background-color: #cc0000 !important;
+}
+
+.status-2004 {
+  background-color: #6aa84f;
+}
+
+.status-2005,
+.status-2006,
+.status-2007 {
+  background-color: #674ea7 !important;
+}
+
+.status-2008 {
+  background-color: #ff9900 !important;
+}
+
+.status-2009,
+.status-2010,
+.status-2011,
+.status-2012,
+.status-2013,
+.status-2014,
+.status-2015,
+.status-2016,
+.status-2017,
+.status-2018, {
+  background-color: #6aa84f !important;
+}
+
+
+
+.status-2019,
+.status-2020 {
+  background-color: #cc0000;
+}
+
+.status-2021,
+.status-2022,
+.status-2023,
+.status-2024,
+.status-2025,
+.status-2026,
+.status-2027, {
+  background-color: #000000 !important;
+}

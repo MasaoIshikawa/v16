@@ -1,0 +1,197 @@
+.button {
+  margin-top: $lendingusa_spacing_md + 2;
+  width: 200px;
+}
+
+:global {
+  .rangeslider-horizontal {
+    height: 4px;
+    border-radius: 0;
+
+    .rangeslider__handle {
+      border: 2px solid #039958;
+      border-radius: 50%;
+      background-color: #04bc6c;
+      box-shadow: 0 4px 15px 1px rgba(0,0,0,.2);
+      width: 44px;
+      height: 44px;
+
+      &::after {
+        display: none;
+      }
+
+      .rangeslider__handle-tooltip {
+        width: 60px;
+        height: 35px;
+      }
+    }
+  }
+  .rangeslider__fill {
+    background-color: $light_gray !important;
+  }
+}
+
+.encryption {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.noBottomMargin {
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+
+.securityLock {
+  width: 40px;
+}
+
+.borrowers-message {
+  text-align: center;
+  margin-bottom: 35px;
+  margin-top: 60px;
+
+  h2 {
+    text-align: center !important;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    &::before {
+      display: none;
+    }
+  }
+
+  h4 {
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.credit-score {
+  background-image: url(/images/credit-score.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 118px;
+  margin: 0 auto 25px;
+  position: relative;
+  text-align: center;
+  width: 212px;
+}
+
+.green-arrows {
+  background-image: url(/images/green-arrows.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 42px;
+  margin: 30px auto -56px;
+  position: relative;
+  text-align: center;
+  width: 30px;
+}
+
+.promo {
+  padding: 60px 0 30% !important;
+  background: #E7F5FF url(/images/decline-partner-bg.jpg) 50% 100% no-repeat;
+  background-size: 100%;
+  text-align: center;
+
+  h5 {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 40em) {
+    padding-bottom: 21% !important;
+  }
+}
+
+.partner-logo {
+  margin-bottom: 20px;
+}
+
+.phone-cta {
+  background: rgba(4,188,108,0.89);
+  box-shadow: 0 15px 50px 1px rgba(0,0,0,0.15);
+  border-radius: 6px;
+  color: #ffffff;
+  font-weight: 500;
+  margin-top: 30px;
+  padding: 21px 30px;
+
+  @media screen and (min-width: 40em) {
+    display: inline-block;
+  }
+}
+
+.d-flex {
+  align-items: center;
+
+  p {
+    line-height: 1.3;
+    color: #ffffff;
+  }
+
+  a {
+    background: url(/images/phone.svg) 0 50% no-repeat;
+    background-size: 24px;
+    color: #ffffff;
+    font-size: 24px;
+    padding-left: 36px;
+  }
+
+  @media screen and (min-width: 40em) {
+    display: flex;
+
+    p {
+      text-align: left;
+      margin-bottom: 0;
+    }
+
+    a {
+      background-size: 30px;
+      font-size: 32px;
+      margin-left: 30px;
+      padding-left: 42px;
+    }
+  }
+}
+
+.or {
+  color: #002248;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: .1em;
+  margin: 10px 0;
+  opacity: 0.5;
+  position: relative;
+
+  &::before,
+  &::after {
+    background-color: #5388A8;
+    content: " ";
+    height: 2px;
+    left: 50%;
+    margin-left: -15px;
+    opacity: 0.5;
+    position: absolute;
+    top: 9px;
+    transform: translateX(-40px);
+    width: 30px;
+  }
+
+  &::after {
+    transform: translateX(40px);
+  }
+}
+
+.partner-bullets {
+  margin-top: 35px;
+
+  img {
+    display: block;
+    margin: 0 auto 20px;
+  }
+
+  p {
+    color: #002248;
+  }
+}

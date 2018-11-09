@@ -1,0 +1,49 @@
+.pageHeader {
+  padding-bottom: 0;
+  border-bottom: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.noBottom {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+  border-bottom: none;
+}
+
+.noMarginBottom {
+  margin-bottom: 0;
+}
+
+.button {
+  padding: 8px 0;
+  font-size: 14px !important;
+}
+
+.reveal {
+  align-items: center;
+  justify-content: center;
+}
+
+.insideReveal {
+  padding-top: 95px;
+}
+
+.cardHeader {
+  border-bottom: 2px solid #F2F1F0;
+  left: 0;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  width: 100%;
+
+  h5 {
+    line-height: 60px;
+    margin-bottom: 0;
+  }
+}
+
+.embedImage{
+  max-width: 50%;
+}
